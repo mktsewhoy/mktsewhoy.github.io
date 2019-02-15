@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>mktsewhoy.github.io CSS file</title>
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet">
-    background-color: #800000;
-
+    
     <style type="text/css">
+        background-color: #800000;
         h1 {font-size: 48px;
             font-family: 'Titillium Web', sans-serif;
         }
