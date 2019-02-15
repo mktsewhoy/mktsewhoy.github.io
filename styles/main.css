@@ -15,7 +15,9 @@
         a.active {color: #ffffff;
         }
 
-        body {bgcolor: #800000;}
+        body {
+            background-color: #800000;
+        }
         h1 {font-size: 48px;
             color: #ffff40;
             font-family: "Titillium Web", sans-serif;
@@ -31,8 +33,8 @@
         p {font-size: 14px;
             color: #ffff40;
             font-family: 'Merriweather', serif;
-            background-color: red;
         }
+        pbox {background-color: #c00000;}
 
     </style>
     </head>
