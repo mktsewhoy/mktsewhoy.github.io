@@ -6,11 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet">
     
     <style type="text/css">
-        body {background: #800000;}
+        body {background-color: #800000;}
         h1 {font-size: 48px;
+            color: #ffff40;
             font-family: 'Titillium Web', sans-serif;
         }
         h2 {font-size: 36px;
+            color: #ffff40;
             font-family: 'Titillium Web', sans-serif;    
         }
         p {font-size: 14px;
@@ -20,5 +22,9 @@
 
     </style>
     </head>
+
+    <body>
+        <body style="background-color: #800000;">
+    </body>
 
 </html>
