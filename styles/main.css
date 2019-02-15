@@ -34,8 +34,10 @@
             color: #ffff40;
             font-family: 'Merriweather', serif;
         }
-        pbox {background-color: #d00000;
+        .pbox {background-color: #d00000;
             padding: 16px 16px 16px 16px;
+            border-style: solid;
+            border-width: 1px;
         }
 
     </style>
