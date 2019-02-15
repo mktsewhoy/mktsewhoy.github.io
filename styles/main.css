@@ -30,7 +30,8 @@
             }
         p {font-size: 14px;
             color: #ffff40;
-            font-family: 'Merriweather', serif;    
+            font-family: 'Merriweather', serif;
+            background-color: red;
         }
 
     </style>
