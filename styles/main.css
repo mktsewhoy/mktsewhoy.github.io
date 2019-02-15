@@ -3,17 +3,17 @@
     <head>
     <meta charset="UTF-8">
     <title>mktsewhoy.github.io CSS file</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet" type="text/css">
     
     <style type="text/css">
         body {background-color: #800000;}
         h1 {font-size: 48px;
             color: #ffff40;
-            font-family: 'Titillium Web', sans-serif;
+            font-family: "Titillium Web", sans-serif;
         }
         h2 {font-size: 36px;
             color: #ffff40;
-            font-family: 'Titillium Web', sans-serif;    
+            font-family: "Titillium Web", sans-serif;    
         }
         p {font-size: 14px;
             color: #ffff40;
