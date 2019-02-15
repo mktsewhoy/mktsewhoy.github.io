@@ -6,6 +6,10 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet" type="text/css">
     
     <style type="text/css">
+        a {color: orange;}
+        a.visited {color: orange'}
+        a.hover {color: light-green;}
+
         body {bgcolor: #800000;}
         h1 {font-size: 48px;
             color: #ffff40;
