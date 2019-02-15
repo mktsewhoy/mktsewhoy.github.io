@@ -6,7 +6,6 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet">
     
     <style type="text/css">
-        background-color: #800000;
         h1 {font-size: 48px;
             font-family: 'Titillium Web', sans-serif;
         }
@@ -20,4 +19,7 @@
 
     </style>
     </head>
+
+    <body bgcolor=#800000>
+    </body>
 </html>
