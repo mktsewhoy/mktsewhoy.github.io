@@ -1,16 +1,23 @@
-<style>
-<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet">
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <title>mktsewhoy.github.io CSS file</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet">
     background-color: #800000;
 
-    h1 {font-size: 48px;
-        font-family: 'Titillium Web', sans-serif;
-    }
-    h2 {font-size: 36px;
-        font-family: 'Titillium Web', sans-serif;    
-    }
-    p {font-size: 14px;
-        color: #ffff40;
-        font-family: 'Merriweather', serif;    
-    }
+    <style>
+        h1 {font-size: 48px;
+            font-family: 'Titillium Web', sans-serif;
+        }
+        h2 {font-size: 36px;
+            font-family: 'Titillium Web', sans-serif;    
+        }
+        p {font-size: 14px;
+            color: #ffff40;
+            font-family: 'Merriweather', serif;    
+        }
 
-</style>
+    </style>
+    </head>
+</html>
