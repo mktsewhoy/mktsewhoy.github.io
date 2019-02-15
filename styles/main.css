@@ -6,6 +6,11 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet" type="text/css">
     
     <style type="text/css">
+        a, a:link, a:visited, a:hover {
+            color: #ffff40;
+            text-decoration:none;
+        }
+        a:active {color: white;}
         body {
             background-color: #800000;
         }
@@ -21,31 +26,38 @@
             color: #ffff40;
             font-family: "Titillium Web", sans-serif; 
             }
+        h4 {font-size: 16px;
+            color: #ffff40;
+            font-family: "Titillium Web", sans-serif;
+            font-style: bold;        
+        }
         p {font-size: 14px;
             color: #ffff40;
             font-family: 'Merriweather', serif;
+            margin-left: 16px;
         }
         .pbox {background-color: #d00000;
-            padding: 16px 16px 16px 16px;
+            margin: 8x 8x 8x 8x;
+            padding: 8x 8x 8x 8x;
             border-style: solid;
             border-width: 1px;
             border-color: #c0c000;
+            width: 50%;
         }
-        a.link {color: #ff8000;
+        .menu {
+            background-color: #c00000;
+            margin: 8x 8x 8x 8x;
+            padding: 8x 8x 8x 8x;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #c0c000;
+            display:grid;
+            grid-template-columns: 128px 128px 128px;
+            text-align: center;
+            width: 50%;
         }
-        a.visited {color: #804000;
-        }
-        a.hover {color: #80ff80;
-        }
-        a.active {color: #ffffff;
-        }
-
-
+     
     </style>
     </head>
-
-    <body bgcolor=#800000>
-        
-    </body>
 
 </html>
