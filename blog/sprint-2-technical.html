@@ -4,16 +4,49 @@
     <title>Stories and Legends (PAGE title) </title>
     <meta charset="UTF-8">
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web|Ubuntu+Mono" rel="stylesheet" type="text/css">
+    <style>
+      .demoborder {
+        text-align: center;
+        color: #800000;
+        font-family: 'Merriweather', serif;
+        background-color: #ffff40;
+        width: 50%;
+        padding: 16px 0px 32px 0px;
+        margin: 0px;
+      }
+      .demopadding {background-color: #800000;
+        text-align: center;
+        padding: 16px;
+        margin: 0px 32px 0px 32px;
+      }
+    </style>
   </head>
 
-  <body bgcolor=#800000>
+  <body bgcolor=#800000 >
       <header>
         <nav class=menu>
           <h4><a href=../index.html>Home</a></h4>
           <h4><a href=#>Blog</a></h4>
           <h4><a href=>Reflections</a></h4>
         </nav>
-      </header> 
+      </header>
+      <h1>Sprint 2 Technical Blog</h1>
+      <h2>What is the difference between Margin, Border, and Padding?</h2>
+      <p>The margin is the amount of space between this box and anything else outside of it, such as other boxes or the edge of the page.</p>
+        <div class=demoborder>
+          The border is the thickness and style of this box's outer rim.
+          <div class=demopadding>
+            <p>The padding is the amount of space between the border and the content in this box.</p>
+          </div>
+        </div>
+      <h2>How are they used?</h2>
+        <div class=pbox>
+          <p>In a CSS file or segment, the <font class=mono>margin</font>, <font class=mono>border</font>, and <font class=mono>padding</font> attributes can be used as follows:</p>
+          <p class=mono>margin: TOP RIGHT BOTTOM LEFT;</p>
+          <p class=mono>border: TOP RIGHT BOTTOM LEFT;</p>
+          <p class=mono>padding: TOP RIGHT BOTTOM LEFT;</p>
+          <p>Further information can be referred to at <a href=https://www.3schools.com/css/css_boxmodel.asp>W3Schools</a>.</p>
+        </div>
   </body>
 </html>
