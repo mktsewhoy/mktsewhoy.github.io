@@ -9,9 +9,10 @@
              color: #ffff40;
              font-family: "Titillium Web", sans-serif;
         }
-        a, a:link, a:visited, a:hover {
+        a, a:link, a:visited {
             color: #ffff40;
-        }        
+        }
+        a:hover {color: orange;}
         a:active {color: white;
         }
         h2 {font-size: 36px;
