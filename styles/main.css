@@ -2,7 +2,11 @@
     <meta charset="UTF-8">
     
     <style type="text/css">
-        body {background-color: #800000;}
+        body {background-color: #800000;
+            font-size: 16px;
+            color: #ffff40;
+            font-family: 'Merriweather', serif;
+        }
 
         h1 {font-size: 48px;
             background-color: #800000;
@@ -25,17 +29,21 @@
             background-color: #800000;
             font-family: "Titillium Web", sans-serif; 
             }
-        h4 {font-size: 16px;
+        h4 {font-size: 18px;
             color: #ffff40;
             font-family: "Titillium Web", sans-serif;
             font-style: bold;        
         }
 
-        p {font-size: 14px;
+        p {font-size: 16px;
             color: #ffff40;
             font-family: 'Merriweather', serif;
             margin-left: 16px;
             margin-right: 16px;
+        }
+        .mono {font-family: Ubuntu Mono; monospace;
+            font-size: 18px;
+            color: cyan;
         }
         .pbox {background-color: #d00000;
             margin: 8x 8x 8x 8x;
@@ -58,6 +66,8 @@
             text-align: center;
             width: 50%;
         }
+        .text {font-color: #ffff40;
+            font-family: 'Merriweather', serif;}
      
     </style>
 </head>
