@@ -29,15 +29,15 @@
             background-color: #800000;
             font-family: "Titillium Web", sans-serif; 
             }
-        h4 {font-size: 18px;
+        h4 {font-size: 20px;
             color: #ffff40;
             font-family: "Titillium Web", sans-serif;
-            font-style: bold;        
+       
         }
-        h5 {font-size: 16px;
+        h5 {font-size: 18px;
             color: #ffff40;
             font-family: "Titillium Web", sans-serif;
-            font-style: bold;
+            
             margin-left: 16px;
             margin-right: 16px;
         }
