@@ -34,6 +34,13 @@
             font-family: "Titillium Web", sans-serif;
             font-style: bold;        
         }
+        h5 {font-size: 16px;
+            color: #ffff40;
+            font-family: "Titillium Web", sans-serif;
+            font-style: bold;
+            margin-left: 16px;
+            margin-right: 16px;
+        }
 
         p {font-size: 16px;
             color: #ffff40;
