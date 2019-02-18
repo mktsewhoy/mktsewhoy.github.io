@@ -48,31 +48,36 @@
             margin-left: 16px;
             margin-right: 16px;
         }
+        .menu {
+            background-color: #c00000;
+            border-style: solid;
+            border-width: 1px;
+            border-color: #c0c000;
+            display: grid;
+            grid-template-columns: 128px 128px 128px;
+            margin: 8x 8x 8x 8x;
+            padding: 8x 8x 8x 8x;
+            max-width: 1200px;
+            min-width: 430px;
+            text-align: center;
+            width: 50%;
+        }
         .mono {font-family: Ubuntu Mono; monospace;
             font-size: 18px;
             color: cyan;
         }
+
         .pbox {background-color: #d00000;
             margin: 8x 8x 8x 8x;
             padding: 8x 8x 8x 8x;
             border-style: solid;
             border-width: 1px;
             border-color: #c0c000;
-            
+            max-width: 1200px;
+            min-width: 430px;
             width: 50%;
         }
-        .menu {
-            background-color: #c00000;
-            margin: 8x 8x 8x 8x;
-            padding: 8x 8x 8x 8x;
-            border-style: solid;
-            border-width: 1px;
-            border-color: #c0c000;
-            display:grid;
-            grid-template-columns: 128px 128px 128px;
-            text-align: center;
-            width: 50%;
-        }
+        
         .text {font-color: #ffff40;
             font-family: 'Merriweather', serif;}
      
