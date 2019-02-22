@@ -10,8 +10,9 @@
 
         h1 {font-size: 48px;
             background-color: #800000;
-             color: #ffff40;
-             font-family: "Titillium Web", sans-serif;
+            color: #ffff40;
+            font-family: "Titillium Web", sans-serif;
+            margin-left: 24px;
         }
         a, a:link, a:visited {
             color: #ffff40;
@@ -22,22 +23,23 @@
         h2 {font-size: 32px;
             background-color: #800000;
             color: #ffff40;
-            font-family: "Titillium Web", sans-serif;    
+            font-family: "Titillium Web", sans-serif;
+            margin-left: 24px;   
         }
         h3 {font-size: 24px;
             color: #ffff40;
             background-color: #800000;
             font-family: "Titillium Web", sans-serif; 
-            }
+            margin-left: 24px;
+        }
         h4 {font-size: 20px;
             color: #ffff40;
             font-family: "Titillium Web", sans-serif;
-       
+            margin-left: 16px;       
         }
         h5 {font-size: 18px;
             color: #ffff40;
             font-family: "Titillium Web", sans-serif;
-            
             margin-left: 16px;
             margin-right: 16px;
         }
@@ -55,8 +57,8 @@
             border-color: #c0c000;
             display: grid;
             grid-template-columns: 128px 128px 128px;
-            margin: 8x 8x 8x 8x;
-            padding: 8x 8x 8x 8x;
+            margin: 12px 4px 4px 4px;
+            padding: 4px 4px 4px 4px;
             max-width: 1200px;
             min-width: 430px;
             text-align: center;
@@ -68,8 +70,8 @@
         }
 
         .pbox {background-color: #d00000;
-            margin: 8x 8x 8x 8x;
-            padding: 8x 8x 8x 8x;
+            margin: 4px 4px 4px 4px;
+            padding: 8px 8px 8px 8px;
             border-style: solid;
             border-width: 1px;
             border-color: #c0c000;
@@ -77,7 +79,22 @@
             min-width: 430px;
             width: 50%;
         }
-        
+        .ptable {
+            margin: 2px 2px 2px 2px;
+            padding: 2px 2px 2px 2px;
+            border-style: dotted;
+            border-color: #c0c000;
+            border-width: 1px;
+            //background-color: #ff0000;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-gap: 4px;
+        }
+        .ptable > div {
+            background-color: yellow;
+            padding: 4px;
+          }
+
         .text {font-color: #ffff40;
             font-family: 'Merriweather', serif;}
      
