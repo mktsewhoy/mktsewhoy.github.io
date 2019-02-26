@@ -2,6 +2,7 @@
     <meta charset="UTF-8">
     
     <style type="text/css">
+
         body {background-color: #800000;
             font-size: 16px;
             color: #ffff40;
@@ -28,9 +29,9 @@
         }
         h3 {font-size: 24px;
             color: #ffff40;
-            background-color: #800000;
+            
             font-family: "Titillium Web", sans-serif; 
-            margin-left: 24px;
+            margin-left: 16px;
         }
         h4 {font-size: 20px;
             color: #ffff40;
@@ -49,6 +50,7 @@
             font-family: 'Merriweather', serif;
             margin-left: 16px;
             margin-right: 16px;
+            text-align: left;
         }
         .menu {
             background-color: #c00000;
@@ -59,25 +61,25 @@
             grid-template-columns: 128px 128px 128px;
             margin: 12px 4px 4px 4px;
             padding: 4px 4px 4px 4px;
-            max-width: 1200px;
-            min-width: 430px;
+
             text-align: center;
-            width: 50%;
         }
         .mono {font-family: Ubuntu Mono; monospace;
             font-size: 18px;
             color: cyan;
         }
-
+        .page {
+            max-width: 1024px;
+            min-width: 430px;
+            margin: auto;
+        }
         .pbox {background-color: #d00000;
             margin: 4px 4px 4px 4px;
             padding: 8px 8px 8px 8px;
             border-style: solid;
             border-width: 1px;
             border-color: #c0c000;
-            max-width: 1200px;
-            min-width: 430px;
-            width: 50%;
+
         }
         .ptable {
             margin: 2px 2px 2px 2px;
