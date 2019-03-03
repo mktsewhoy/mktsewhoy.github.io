@@ -29,9 +29,8 @@
         }
         h3 {font-size: 24px;
             color: #ffff40;
-            
             font-family: "Titillium Web", sans-serif; 
-            margin-left: 16px;
+            margin-left: 16px;           
         }
         h4 {font-size: 20px;
             color: #ffff40;
@@ -43,6 +42,13 @@
             font-family: "Titillium Web", sans-serif;
             margin-left: 16px;
             margin-right: 16px;
+        }
+        li {font-size: 16px;
+            color: #ffff40;
+            font-family: 'Merriweather', serif;
+            margin-left: 16px;
+            margin-right: 16px;
+            text-align: left;
         }
 
         p {font-size: 16px;
