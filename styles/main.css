@@ -1,111 +1,102 @@
-<head>
-    <meta charset="UTF-8">
-    
-    <style type="text/css">
+body {background-color: #800000;
+    font-size: 16px;
+    color: #ffff40;
+    font-family: 'Merriweather', serif;
+}
 
-        body {background-color: #800000;
-            font-size: 16px;
-            color: #ffff40;
-            font-family: 'Merriweather', serif;
-        }
+h1 {font-size: 48px;
+    background-color: #800000;
+    color: #ffff40;
+    font-family: "Titillium Web", sans-serif;
+    margin-left: 24px;
+}
+a, a:link, a:visited {
+    color: #ffff40;
+}
+a:hover {color: orange;}
+a:active {color: white;
+}
+h2 {font-size: 32px;
+    background-color: #800000;
+    color: #ffff40;
+    font-family: "Titillium Web", sans-serif;
+    margin-left: 24px;   
+}
+h3 {font-size: 24px;
+    color: #ffff40;
+    font-family: "Titillium Web", sans-serif; 
+    margin-left: 16px;           
+}
+h4 {font-size: 20px;
+    color: #ffff40;
+    font-family: "Titillium Web", sans-serif;
+    margin-left: 16px;       
+}
+h5 {font-size: 18px;
+    color: #ffff40;
+    font-family: "Titillium Web", sans-serif;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+li {font-size: 16px;
+    color: #ffff40;
+    font-family: 'Merriweather', serif;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: left;
+}
 
-        h1 {font-size: 48px;
-            background-color: #800000;
-            color: #ffff40;
-            font-family: "Titillium Web", sans-serif;
-            margin-left: 24px;
-        }
-        a, a:link, a:visited {
-            color: #ffff40;
-        }
-        a:hover {color: orange;}
-        a:active {color: white;
-        }
-        h2 {font-size: 32px;
-            background-color: #800000;
-            color: #ffff40;
-            font-family: "Titillium Web", sans-serif;
-            margin-left: 24px;   
-        }
-        h3 {font-size: 24px;
-            color: #ffff40;
-            font-family: "Titillium Web", sans-serif; 
-            margin-left: 16px;           
-        }
-        h4 {font-size: 20px;
-            color: #ffff40;
-            font-family: "Titillium Web", sans-serif;
-            margin-left: 16px;       
-        }
-        h5 {font-size: 18px;
-            color: #ffff40;
-            font-family: "Titillium Web", sans-serif;
-            margin-left: 16px;
-            margin-right: 16px;
-        }
-        li {font-size: 16px;
-            color: #ffff40;
-            font-family: 'Merriweather', serif;
-            margin-left: 16px;
-            margin-right: 16px;
-            text-align: left;
-        }
+p {font-size: 16px;
+    color: #ffff40;
+    font-family: 'Merriweather', serif;
+    margin-left: 16px;
+    margin-right: 16px;
+    text-align: left;
+}
+.menu {
+    background-color: #c00000;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c0c000;
+    display: grid;
+    grid-template-columns: 128px 128px 128px;
+    margin: 12px 4px 4px 4px;
+    padding: 4px 4px 4px 4px;
 
-        p {font-size: 16px;
-            color: #ffff40;
-            font-family: 'Merriweather', serif;
-            margin-left: 16px;
-            margin-right: 16px;
-            text-align: left;
-        }
-        .menu {
-            background-color: #c00000;
-            border-style: solid;
-            border-width: 1px;
-            border-color: #c0c000;
-            display: grid;
-            grid-template-columns: 128px 128px 128px;
-            margin: 12px 4px 4px 4px;
-            padding: 4px 4px 4px 4px;
+    text-align: center;
+}
+.mono {font-family: Ubuntu Mono; monospace;
+    font-size: 18px;
+    color: cyan;
+}
+.page {
+    max-width: 1024px;
+    min-width: 430px;
+    margin: auto;
+}
+.pbox {background-color: #d00000;
+    margin: 4px 4px 4px 4px;
+    padding: 8px 8px 8px 8px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #c0c000;
 
-            text-align: center;
-        }
-        .mono {font-family: Ubuntu Mono; monospace;
-            font-size: 18px;
-            color: cyan;
-        }
-        .page {
-            max-width: 1024px;
-            min-width: 430px;
-            margin: auto;
-        }
-        .pbox {background-color: #d00000;
-            margin: 4px 4px 4px 4px;
-            padding: 8px 8px 8px 8px;
-            border-style: solid;
-            border-width: 1px;
-            border-color: #c0c000;
+}
+.ptable {
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+    border-style: dotted;
+    border-color: #c0c000;
+    border-width: 1px;
+    //background-color: #ff0000;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 4px;
+}
+.ptable > div {
+    background-color: yellow;
+    padding: 4px;
+    }
 
-        }
-        .ptable {
-            margin: 2px 2px 2px 2px;
-            padding: 2px 2px 2px 2px;
-            border-style: dotted;
-            border-color: #c0c000;
-            border-width: 1px;
-            //background-color: #ff0000;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-gap: 4px;
-        }
-        .ptable > div {
-            background-color: yellow;
-            padding: 4px;
-          }
-
-        .text {font-color: #ffff40;
-            font-family: 'Merriweather', serif;}
-     
-    </style>
-</head>
-
+.text {font-color: #ffff40;
+    font-family: 'Merriweather', serif;}
