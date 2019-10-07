@@ -1,80 +1,279 @@
-  <!DOCTYPE html>
-  <html lang="en">
-      <head>
-          <title>Portfolio</title>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <meta http-equiv="X-UA-Compatible" content="ie=edge">
-          <link href="../styles/main.css" rel="stylesheet" type="text/css">
-          <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web|Ubuntu+Mono" rel="stylesheet" type="text/css">
-      </head>
-  
-      <body bgcolor=#800000 class=page>
-          <header>
-              <nav class=menu>
-                <h4><a href='../index.html'>Home</a></h4>
-                <h4><a href='../blog/index.html'>Blog</a></h4>
-                <h4><a href='../portfolio/index.html'>Portfolio</a></h4>
-              </nav>
-            </header>
-          <h1>Portfolio</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>Portfolio</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href="../styles/main.css" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Titillium+Web|Ubuntu+Mono" rel="stylesheet" type="text/css">
+  </head>
 
-          <h2>Enspiral Dev Academy &ndash; 2019</h2>
-          <div class="pbox">
-            <!-- <div class="ptable"> -->
-            <h3><a href='/solo-project-Unit-converter/'>Automatic Unit Converter</a></h3>
-            <p>Solo project with JavaScript, HTML & CSS at <a href='https://devacademy.co.nz'>Enspiral Dev Academy</a></p>
-            <p><a href='../images/UnitConverter.png'><img src='../images/UnitConverter.png' width='70%' height='70%'></a></p>
-          </div>
-          <div class="pbox">
-            <h3><a href='https://github.com/piwakawaka-2019/Burning-Rubber-'>Burning Rubber</a></h3>
-            <p>JavaScript, CSS & Route group project with Adam, Devon & Luke at Enspiral Dev Academy</p>
-            <p><a href='../images/BurningRubber.png'><img src='../images/BurningRubber.png' width='70%' height='70%'></a></p>
-          </div>
-          <div class="pbox">
-            <h3><a href='https://pickacardmtg.herokuapp.com/'>Pick A Card</a></h3>
-            <p>Database group project with Meg, Nathan & Sharlene at Enspiral Dev Academy</p>
-            <p><a href='../images/MTG pick.jpg'><img src='../images/MTG pick.jpg' width='45%' height='45%'></a> &nbsp; &nbsp;
-              <a href='../images/MTG pay.jpg'><img src='../images/MTG pay.jpg' width='45%' height='45%'></a></p>
-              <p><a href='../images/MTG main.jpg'><img src='../images/MTG main.jpg' width='45%' height='45%'></a> &nbsp; &nbsp;
-                <a href='../images/MTG card.png'><img src='../images/MTG card.png' width='45%' height='45%'></a></p>
-          </div>
-          <div class="pbox">
-            <h3><a href='https://github.com/piwakawaka-2019/invisisounds'>Invisisounds</a></h3>
-            <p>React Component group project with Jennifer, Nathan & Nanz at Enspiral Dev Academy</p>
-            <!-- <p><a href=''><img src='../images/' width='70%' height='70%'></a></p> -->
-          </div>
-          <div class="pbox">
-            <h3><a href='https://github.com/piwakawaka-2019/horoscopes/tree/dev'>Your Horoscope</a></h3>
-            <p>API group project with  Jennifer, Jorge, Nanz & Sharlene at Enspiral Dev Academy</p>
-            <p><a href='../images/YourHoroscope.png'><img src='../images/YourHoroscope.png' width='70%' height='70%'></a></p>
-          </div>
-          <div class="pbox">
-            <h3><a href='https://github.com/piwakawaka-2019/What-ly/tree/dev'>Whatily</a></h3>
-            <p>Full-stack group project with Blaine, Vinnie & Zoe at Enspiral Dev Academy</p>
-            <p><a href='../images/whatily1.png'><img src='../images/whatily1.png' width='45%' height='45%'></a> &nbsp; &nbsp; <a href='../images/whatily2.png'><img src='../images/whatily2.png' width='45%' height='45%'></a></p>
-          </div>
-          <div class="pbox">
-            <h3><a href='http://motherloaded.herokuapp.com/'>MotherLoad</a></h3>
-            <p>Final full-stack group project with Adam, Meg & Nathan</p>
-            <p><a href='../images/Motherload.png'><img src='../images/Motherload.png' width='70%' height='70%'></a></p>
-            <!-- </div> -->
-          </div>
+  <script type="text/javascript">
+    // Open the Modal
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+    
+    // Close the Modal
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+    
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    // Next/previous controls
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    // Thumbnail image controls
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
 
-          <h2>Other Projects &ndash; 2019</h2>
-          <div class="pbox">
-            <!-- <div class="ptable"> -->
-            <h3><a href=#>Custom Error Pages</a></h3>
-            <p>WWW error page UI/UX redesign inspired by the early colour TV era.</p>
-            <p><a href='../images/custom%20403.png'><img src='../images/custom%20403.png' width='45%' height='45%'></a> &nbsp; &nbsp;
-              <a href='../images/custom%20404.png'><img src='../images/custom%20404.png' width='45%' height='45%'></a></p>
-            <p><a href='../images/custom%20451.png'><img src='../images/custom%20451.png' width='45%' height='45%'></a> &nbsp; &nbsp;
-              <a href='../images/custom%20500.png'><img src='../images/custom%20500.png' width='45%' height='45%'></a></p>
-            <p><a href='../images/custom%20502.png'><img src='../images/custom%20502.png' width='45%' height='45%'></a></p>
-          </div>
-          
-          <footer>
-              <p>&copy; 2019 Matthew Sew Hoy</p>
-          </footer>
-      </body>
-  </html>
+  <body bgcolor=#800000 class=page>
+    <header>
+      <nav class=menu>
+        <h4><a href='../index.html'>Home</a></h4>
+        <h4><a href='../blog/index.html'>Blog</a></h4>
+        <h4><a href='../portfolio/index.html'>Portfolio</a></h4>
+      </nav>
+    </header>
+    
+    <h1>Portfolio</h1>
+
+    <h2>Enspiral Dev Academy &ndash; 2019</h2>
+    <div class="pbox">
+      <!-- <div class="ptable"> -->
+      <h3><a href='/solo-project-Unit-converter/'>Automatic Unit Converter</a></h3>
+      <p>Solo project with JavaScript, HTML & CSS at <a href='https://devacademy.co.nz'>Enspiral Dev Academy</a></p>
+      <p><img src='../images/UnitConverter.png' width='70%' height='70%' onclick="openModal();currentSlide(1)" class="hover-shadow"></p>
+    </div>
+    <div class="pbox">
+      <h3><a href='https://github.com/piwakawaka-2019/Burning-Rubber-'>Burning Rubber</a></h3>
+      <p>JavaScript, CSS & Route group project with Adam, Devon & Luke at Enspiral Dev Academy</p>
+      <p><img src='../images/BurningRubber.png' width='70%' height='70%' onclick="openModal();currentSlide(2)" class="hover-shadow"></p>
+    </div>
+    <div class="pbox">
+      <h3><a href='https://pickacardmtg.herokuapp.com/'>Pick A Card</a></h3>
+      <p>Database group project with Meg, Nathan & Sharlene at Enspiral Dev Academy</p>
+      <p><img src='../images/MTG pick.jpg' width='45%' height='45%' onclick="openModal();currentSlide(3)" class="hover-shadow"> &nbsp; &nbsp;
+        <img src='../images/MTG pay.jpg' width='45%' height='45%' onclick="openModal();currentSlide(4)" class="hover-shadow"></p>
+        <p><img src='../images/MTG main.jpg' width='45%' height='45%' onclick="openModal();currentSlide(5)" class="hover-shadow"> &nbsp; &nbsp;
+          <img src='../images/MTG card.png' width='45%' height='45%' onclick="openModal();currentSlide(6)" class="hover-shadow"></p>
+    </div>
+    <div class="pbox">
+      <h3><a href='https://github.com/piwakawaka-2019/invisisounds'>Invisisounds</a></h3>
+      <p>React Component group project with Jennifer, Nathan & Nanz at Enspiral Dev Academy</p>
+      <!-- <p><a href=''><img src='../images/' width='70%' height='70%'></a></p> -->
+    </div>
+    <div class="pbox">
+      <h3><a href='https://github.com/piwakawaka-2019/horoscopes/tree/dev'>Your Horoscope</a></h3>
+      <p>API group project with  Jennifer, Jorge, Nanz & Sharlene at Enspiral Dev Academy</p>
+      <p><img src='../images/YourHoroscope.png' width='70%' height='70%' onclick="openModal();currentSlide(7)" class="hover-shadow"></p>
+    </div>
+    <div class="pbox">
+      <h3><a href='https://github.com/piwakawaka-2019/What-ly/tree/dev'>Whatily</a></h3>
+      <p>Full-stack group project with Blaine, Vinnie & Zoe at Enspiral Dev Academy</p>
+      <p><img src='../images/whatily1.png' width='45%' height='45%' onclick="openModal();currentSlide(8)" class="hover-shadow">
+        &nbsp; &nbsp;
+        <img src='../images/whatily2.png' width='45%' height='45%' onclick="openModal();currentSlide(9)" class="hover-shadow"></p>
+    </div>
+    <div class="pbox">
+      <h3><a href='http://motherloaded.herokuapp.com/'>MotherLoad</a></h3>
+      <p>Final full-stack group project with Adam, Meg & Nathan</p>
+      <p><img src='../images/Motherload.png' width='70%' height='70%' onclick="openModal();currentSlide(10)" class="hover-shadow"></p>
+      <!-- </div> -->
+    </div>
+
+    <h2>Other Projects &ndash; 2019</h2>
+    <div class="pbox">
+      <!-- <div class="ptable"> -->
+      <h3><a href=#>Custom Error Pages</a></h3>
+      <p>WWW error page UI/UX redesign inspired by the early colour TV era.</p>
+      <p><img src='../images/custom%20403.png' width='45%' height='45%' onclick="openModal();currentSlide(11)" class="hover-shadow"> &nbsp; &nbsp;
+        <img src='../images/custom%20404.png' width='45%' height='45%' onclick="openModal();currentSlide(12)" class="hover-shadow"></p>
+      <p><img src='../images/custom%20451.png' width='45%' height='45%' onclick="openModal();currentSlide(13)" class="hover-shadow"> &nbsp; &nbsp;
+        <img src='../images/custom%20500.png' width='45%' height='45%' onclick="openModal();currentSlide(14)" class="hover-shadow"></p>
+      <p><img src='../images/custom%20502.png' width='45%' height='45%' onclick="openModal();currentSlide(15)" class="hover-shadow"></p>
+    </div>
+    
+    <!-- The Modal/Lightbox -->
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 15</div>
+          <img src="../images/UnitConverter.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 15</div>
+          <img src="../images/BurningRubber.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 15</div>
+          <img src="../images/MTG pick.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 15</div>
+          <img src="../images/MTG pay.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 15</div>
+          <img src="../images/MTG main.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 15</div>
+          <img src="../images/MTG card.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 15</div>
+          <img src="../images/YourHoroscope.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 15</div>
+          <img src="../images/whatily1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">9 / 15</div>
+          <img src="../images/whatily2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">10 / 15</div>
+          <img src="../images/Motherload.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">11 / 15</div>
+          <img src="../images/custom%20403.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">12 / 15</div>
+          <img src="../images/custom%20404.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">13 / 15</div>
+          <img src="../images/custom%20451.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">14 / 15</div>
+          <img src="../images/custom%20500.png" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">15 / 15</div>
+          <img src="../images/custom%20502.png" style="width:100%">
+        </div>
+
+        <!-- Next/previous controls -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <!-- Caption text -->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail image controls -->
+        <div class="column">
+          <img class="demo" src="../images/UnitConverter.png" onclick="currentSlide(1)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/BurningRubber.png" onclick="currentSlide(2)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/MTG pick.jpg" onclick="currentSlide(3)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/MTG pay.jpg" onclick="currentSlide(4)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/MTG main.jpg" onclick="currentSlide(5)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/MTG card.png" onclick="currentSlide(6)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/YourHoroscope.png" onclick="currentSlide(7)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/whatily1.png" onclick="currentSlide(8)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/whatily2.png" onclick="currentSlide(9)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/Motherload.png" onclick="currentSlide(10)" alt="" width=90%>
+        </div>
+
+        <div class="column">
+          <img class="demo" src="../images/custom%20403.png" onclick="currentSlide(11)" alt="" width=90%>
+        </div>
+        
+        <div class="column">
+          <img class="demo" src="../images/custom%20404.png" onclick="currentSlide(12)" alt="" width=90%>
+        </div>
+        
+        <div class="column">
+          <img class="demo" src="../images/custom%20451.png" onclick="currentSlide(13)" alt="" width=90%>
+        </div>
+        
+        <div class="column">
+          <img class="demo" src="../images/custom%20500.png" onclick="currentSlide(14)" alt="" width=90%>
+        </div>
+        
+        <div class="column">
+          <img class="demo" src="../images/custom%20502.png" onclick="currentSlide(15)" alt="" width=90%>
+        </div>
+        
+      </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2019 Matthew Sew Hoy</p>
+    </footer>
+  </body>
+</html>
